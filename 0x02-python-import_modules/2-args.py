@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    no_of_args = len(sys.argv) - 1
+    no_of_args = len(sys.argv)
     if no_of_args == 1:
         print("{} argument:".format(no_of_args))
     else:
