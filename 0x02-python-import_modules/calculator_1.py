@@ -23,7 +23,7 @@ def sub(a, b):
     """
     return (a - b)
 
-def mul(a, b)
+def mul(a, b):
     """My multiplication function
 
     Args:
@@ -35,7 +35,7 @@ def mul(a, b)
     """
     return (a * b)
 
-def div(a, b)
+def div(a, b):
     """My division function
 
     Args:
