@@ -1,5 +1,5 @@
 #!/sr/bin/python3
-fromadd_0 import add
+from add_0 import add
 
 if __name__ == "__main__":
     a = 1
