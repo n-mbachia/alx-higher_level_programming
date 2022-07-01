@@ -8,21 +8,21 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
-        if sys.argv[2] not in ['+', '-', '*', '/']:
-            print("Unknown operator. Available operators: +, -, *,and /")
-            sys.exit(1)
+    if sys.argv[2] not in ['+', '-', '*', '/']:
+         print("Unknown operator. Available operators: +, -, * and /")
+         sys.exit(1)
 
-            a, op, b = sys.argv[1:]
+    a, op, b = sys.argv[1:]
 
-            # choose operations
-            if op == '+':
-                func = add
-            elif op == '-':
-                func = sub
-            elif op == '*':
-                func = mul
-            else:
-                func = div
+    # choose operations
+    if op == '+':
+        func = add
+    elif op == '-':
+        func = sub
+    elif op == '*':
+        func = mul
+    else:
+        func = div
 
-            # perform calculation and print result
-            print("{} {} {} = {:d}".format(a, op, b, func(int(a), int(b))))
+    # perform calculation and print result
+    print("{} {} {} = {:d}".format(a, op, b, func(int(a), int(b))))
