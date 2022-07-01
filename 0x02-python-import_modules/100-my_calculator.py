@@ -15,11 +15,11 @@ if __name__ == "__main__":
             a, op, b = sys.argv[1:]
 
             # choose operations
-            if op == '+'
+            if op == '+':
                 func = add
-            elif op == '-'
+            elif op == '-':
                 func = sub
-            elif op == '*'
+            elif op == '*':
                 func = mul
             else:
                 func = div
