@@ -9,12 +9,12 @@ if __name__ == "__main__":
         sys.exit(1)
 
     if sys.argv[2] not in ['+', '-', '*', '/']:
-         print("Unknown operator. Available operators: +, -, * and /")
-         sys.exit(1)
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
 
     a, op, b = sys.argv[1:]
 
-    # choose operations
+    # choose operation
     if op == '+':
         func = add
     elif op == '-':
