@@ -13,7 +13,7 @@ def add(a, b):
 
 
 def sub(a, b):
-    """My subsraction function
+    """My subtraction function
 
     Args:
         a: first integer
@@ -33,7 +33,7 @@ def mul(a, b):
         b: second integer
 
     Returns:
-        The returns value. a * b
+        The return value. a * b
     """
     return (a * b)
 
