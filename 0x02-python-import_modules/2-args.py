@@ -8,4 +8,4 @@ if __name__ == "__main__":
         print("{} arguments".format(no_of_args))
 
     for i in range(1, no_of_args +1):
-        print("{:d}: {}".format(i, sys.argv[i])):
+        print("{:d}: {}".format(i, sys.argv[i]))
