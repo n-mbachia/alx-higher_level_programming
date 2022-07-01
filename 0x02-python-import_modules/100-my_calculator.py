@@ -25,4 +25,4 @@ if __name__ == "__main__":
                 func = div
 
             # perform calculation and print result
-            print("{} {} = {:d}".format(a, op, b, func(int(a), int(b))))
+            print("{} {} {} = {:d}".format(a, op, b, func(int(a), int(b))))
