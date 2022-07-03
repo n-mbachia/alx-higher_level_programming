@@ -2,6 +2,8 @@
 def max_integer(my_list=[]):
     if not my_list:
         return None
-    else:
-        my_list.sort()
-        return((my_list[-1]))
+    max_number = float('-inf')
+    for i in my_list:
+        if (i > max_number):
+            max_number = 1
+    return max_number
