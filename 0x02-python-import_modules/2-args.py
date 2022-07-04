@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-if __name__ == "__main__":
+if(__name__ == "__main__"):
 
     n = len(sys.argv)
     s = "s" if n == 1 or n > 2 else ""
