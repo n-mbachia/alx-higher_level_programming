@@ -1,27 +1,13 @@
 #!/usr/bin/python3
-def my_dic(i):
-    num_rom = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    for x, y in num_rom.items():
-        if i == x:
-            return y
-    return 0
-
-
 def roman_to_int(roman_string):
-    n = 0
-    future = 0
-    present = 0
-
-    if type(roman_string) is not str or roman_string is None:
+    if not roman_string or type(roman_string) != str:
         return 0
-    if len(roman_string) is 1:
-        return my_dic(roman_string[0])
-    for i in range(0, len(roman_string) - 1):
-        present = my_dic(roman_string[i])
-        future = my_dic(roman_string[i + 1])
-        if present >= future:
-            n += present
-        elif present < future:
-            n -= present
-    n += future
-    return n
+    roman_d = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    roman_n = 0
+    for j in range(len(roman_string)):
+        if j > 0 and roman_d[roman_string[j]] > roman_d[roman_string[j - 1]]:
+            roman_n += roman_d[roman_string[j]] - 2 * \
+                        roman_d[roman_string[j - 1]]
+        else:
+            roman_n += roman_d[roman_string[j]]
+    return roman_n
