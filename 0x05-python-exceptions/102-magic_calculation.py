@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-
-def safe_print_integer(value):
-    """
-    Prints an integer with "{:d}".format()
-
-    Args:
-        value: value to be printed
-
-    Return: True if successful.Otherwise False
-    """
-    try:
-        print("{:d}".format(value))
-    except (ValueError, TypeError):
-        return False
-    else:
-        return True
+def magic_calculation(a, b):
+    result = 0
+    for i in range(1, 3):
+        try:
+            if i > a:
+                raise Exception("Too far")
+            result += a ** b / i
+        except:
+            result = a + b
+            break
+    return result
