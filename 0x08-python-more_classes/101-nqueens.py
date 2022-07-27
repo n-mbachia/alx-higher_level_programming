@@ -25,6 +25,7 @@ def isSafe(m_queen, nqueen):
 
     return True
 
+
 def print_result(m_queen, nqueen):
     """ Method that prints the list with the Queens positions
     Args:
@@ -73,6 +74,7 @@ def solveNQueen(size):
 
     Queen(m_queen, 0)
 
+
 if __name__ == '__main__':
 
     import sys
@@ -90,4 +92,5 @@ if __name__ == '__main__':
     if size < 4:
         print("N must be at least 4")
         sys.exit(1)
+
     solveNQueen(size)
