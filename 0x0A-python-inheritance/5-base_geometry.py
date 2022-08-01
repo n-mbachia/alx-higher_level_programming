@@ -9,4 +9,3 @@ Class:
 class BaseGeometry:
     """ Empty class """
     pass
-

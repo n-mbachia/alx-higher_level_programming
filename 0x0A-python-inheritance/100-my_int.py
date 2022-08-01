@@ -16,4 +16,3 @@ class MyInt(int):
     def __ne__(self, other):
         """ Inverted to equal """
         return super().__eq__(other)
-

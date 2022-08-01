@@ -22,4 +22,3 @@ class Square(Rectangle):
     def area(self):
         """ Returns area """
         return super().area()
-
