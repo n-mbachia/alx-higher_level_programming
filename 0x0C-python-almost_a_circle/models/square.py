@@ -1,4 +1,6 @@
-s module contains the "Square" class
+#!/usr/bin/python3
+"""
+This module contains the "Square" class
 """
 
 from models.rectangle import Rectangle
@@ -57,4 +59,3 @@ class Square(Rectangle):
         d["x"] = self.x
         d["y"] = self.y
         return d
-
